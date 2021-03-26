@@ -1,4 +1,9 @@
 
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
 body{
     background-image: url('https://avada.theme-fusion.com/wp-content/uploads/2019/07/Avada-2-Master-Final-Header.jpg');
     background-repeat: no-repeat;
@@ -8,64 +13,17 @@ body{
 .nav
 {
     padding-top: 40px;
-
     width:100%;
-    overflow: auto;
+    overflow: visible;
+    position: relative;
 }
 img
 {
-    margin-left: 10px;
+    margin-left:40px ;
     display: flexbox;
 }
-.nav ul 
-{
-   list-style-type: none;
-   display: inline-block;
-   
-   
-}
-.nav ul li:hover
-{
-    color: green;
-}
-.nav ul li
-{
-    float: right;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-    width: 14; 
-    justify-content: center; 
-    padding-left: 50px;
 
-    
-    
-}   
-select
-{
-    border: none;
-    font-weight: 500;
-    background-color: rgb(85, 83, 83);
-    color: #fff;
-    opacity: 1;
-    background-color: transparent;
-    
-
-}
-
-.container
-{
- 
-    
-    width: 50%;
-    height: 30%;
-    opacity: 1;
-    margin-left: 500px;
-    margin-top: 100px;
-    border: 5px solid black;
-    
-}
-button
+.buy
 {
     border:2px solid #fff;
     opacity: 1;
@@ -99,20 +57,59 @@ button
     color: #fff;
     font-family: 'Courier New', Courier, monospace;
 }
-.nav ul li select:hover
+.nav ul li
+{
+    color: #fff;
+    display: inline-block;
+    width: max-content;
+    margin-left: 55px;
+    font-size: large;
+}
+.nav ul li:hover
 {
     color: green;
+    border-bottom: 2px solid green;
 
 }
-.nav ul li select option
-{
-    background-color:rgb(27, 25, 25);
+/*drop down css*/
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:transparent;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+  }
+  
+  .dropdown-content a 
+  {
     color: #fff;
-
-    
-} 
-.nav ul li select
-{
-    background-color: transparent;;
-
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom:1px solid white;
+  }
+  
+  .dropdown-content a:hover 
+  {
+      background-color:transparent;
+      border-bottom: 2px solid green;
+  }
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn 
+  {
+    color:green;
+    border-bottom: 2px solid green;
 }
